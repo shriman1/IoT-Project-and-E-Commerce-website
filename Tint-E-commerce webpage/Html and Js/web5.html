@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>All Products-Tint</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        </head>
+        <body>
+           <div class="container">
+            <div class="navbar">
+               <div class="logo">
+                <img src="tintlogo.jpeg" width="200px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web2.html">products</a></li>
+                        <li><a href="web9.html">About</a></li>
+                        <li><a href="web10.html">Contact</a></li>
+                        <li><a href="web5.html">Account</a></li>
+                            
+                        
+                    </ul>
+                </nav>
+                <a href="web4.html"><img src="cart.png" width="30px" height="30px"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+           
+            </div>
+
+        <!-------------account-page-------------->
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="image1.png" width="100%">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+
+                            </div>
+                                <form id="LoginForm">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">forgot password</a>
+                            </form>
+                                <form id="RegForm">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="password">
+                                <a href="web.html">
+                                <button type="submit" class="btn">Login</button>
+                                </a>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <!-----------------footer---------------->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android And Ios Mobile Phones.</p>
+                            <div class="app-logo">
+                                <img src="play-store.png">
+                                <img src="app-store.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="logo1.jpeg">
+                            <p>Our Purpose Is to Sustainably MAke the Pleasure and Benefits of sports Accessible to the Many.</p>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <P class="copyright">Copyright 2022-Toxic Edits</P>
+                </div>
+            </div>
+            <!----------js file--------------->
+            <script> var MenuItems=document.getElementById("MenuItems");
+                    MenuItems.style.maxHeight="0px";
+                    function menutoggle(){
+                        if(menutoggle.style.maxHeight=="0px")
+                        {
+                            MenuItems.style.maxHeight="200px";
+                        }
+                        else{
+                            MenuItems.style.maxHeight="0px";
+                        }
+                    }
+            </script>
+            <script>
+                var LoginForm=document.getElementById("LoginForm")
+                var RegForm=document.getElementById("RegForm")
+                var indicator=document.getElementById("indicator")
+                function register(){
+                    RegForm.style.transform="translatex(0px)";
+                    LoginForm.style.transform="translatex(0px)";
+                    indicator.style.transform="translatex(100px)";
+                }
+                function login(){
+                    RegForm.style.transform="translatex(300px)";
+                    LoginForm.style.transform="translatex(300px)";
+                    indicator.style.transform="translatex(0px)";
+                }
+            </script>
+            </body>
+            </html>

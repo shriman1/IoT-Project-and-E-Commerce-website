@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>All Products-Tint</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        </head>
+        <body>
+           <div class="container">
+            <div class="navbar">
+               <div class="logo">
+                <img src="tintlogo.jpeg" width="200px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="web.html">Home</a></li>
+                        <li><a href="web2.html">products</a></li>
+                        <li><a href="web9.html">About</a></li>
+                        <li><a href="web10.html">Contact</a></li>
+                        <li><a href="web5.html">Account</a></li>
+                            
+                        
+                    </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+           
+            </div>
+     
+            <!----------card items details---------->
+            
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Qunatity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="buy-1.jpg">
+                                <div>
+                                    <p>Red Printed T-shirt</p>
+                                    <small>price:₹450.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>₹450.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="buy-2.jpg">
+                                <div>
+                                    <p>Red Printed T-shirt</p>
+                                    <small>price:₹500.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>₹500.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="buy-3.jpg">
+                                <div>
+                                    <p>Red Printed T-shirt</p>
+                                    <small>price:₹800.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>₹800.00</td>
+                    </tr>
+                </table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>₹1750.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>₹50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>₹1800.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>  
+            
+            <!-----------------footer---------------->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android And Ios Mobile Phones.</p>
+                            <div class="app-logo">
+                                <img src="play-store.png">
+                                <img src="app-store.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="logo1.jpeg">
+                            <p>Our Purpose Is to Sustainably MAke the Pleasure and Benefits of sports Accessible to the Many.</p>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Twitter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <P class="copyright">Copyright 2022-Toxic Edits</P>
+                </div>
+            </div>
+            <!----------js file--------------->
+            <script> var MenuItems=document.getElementById("MenuItems");
+                    MenuItems.style.maxHeight="0px";
+                    function menutoggle(){
+                        if(menutoggle.style.maxHeight=="0px")
+                        {
+                            MenuItems.style.maxHeight="200px";
+                        }
+                        else{
+                            MenuItems.style.maxHeight="0px";
+                        }
+                    }
+            </script>
+            </body>
+            </html>

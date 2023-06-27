@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffd6d6;
+    font-family: sans-serif;
+}
+form{
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+
+}
+form input,textarea{
+    width:100%;
+    margin: 10px 0;
+}
+form input{
+    height: 30px;
+}
